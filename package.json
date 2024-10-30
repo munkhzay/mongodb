@@ -1,17 +1,17 @@
 {
-  "type": "module",
   "name": "mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app",
   "scripts": {
-    "start": "nodemon -r @babel/register index.js"
+    "start": "nodemon app.ts",
+    "build": "tsc",
+    "serve": "nodemon  dist/app.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.21.1",
     "http-server": "^14.1.1",
     "mongoose": "^8.7.3"
   },
@@ -19,6 +19,11 @@
     "@babel/core": "^7.26.0",
     "@babel/node": "^7.25.0",
     "@babel/preset-env": "^7.25.4",
-    "nodemon": "^3.1.7"
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.4",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }

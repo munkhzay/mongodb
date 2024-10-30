@@ -10,9 +10,6 @@ const port = 8080;
 
 app.use("/", userRouter);
 
-// app.get("/", (req: Request, res: Response) => {
-//   res.send("hhello express typescript");
-// });
 const server = async () => {
   await connectDb();
   app.listen(port, () => {
